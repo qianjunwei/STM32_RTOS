@@ -94,7 +94,7 @@ void Task1_task(void *pvParameters)
 	while (1)
 	{
 		LED0 = ~LED0;
-		vTaskDelay(500);			//此处对应时钟节拍，1ms。此处即为500ms
+		vTaskDelay(1000);			//此处对应时钟节拍，1ms。此处即为500ms
 	}
 	
 }
@@ -110,7 +110,7 @@ void Task2_task(void *pvParameters)
 	while (1)
 	{
 		LED1 = 1;
-		vTaskDelay(200);			//此处对应时钟节拍，1ms。此处即为500ms
+		vTaskDelay(1000);			//此处对应时钟节拍，1ms。此处即为500ms
 		LED1 = 0;
 		vTaskDelay(500);
 	}
